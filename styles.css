@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+:root {
+  --Text: hsl(181, 55%, 55%);
+  --Background: hsl(217, 10%, 25%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--Background);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+h1 {
+  font-size: clamp(3.13rem, calc(-0.98rem + 20.53vw), 8rem);
+  color: var(--Text);
+}
+
+span {
+  font-size: clamp(1rem, calc(0.79rem + 1.05vw), 1.25rem);
+  margin-bottom: 2.5rem;
+  color: var(--Text);
+}
+
+.flex {
+  display: flex;
+  gap: 3.13rem;
+}
+
+p {
+  font-size: clamp(1.25rem, calc(0.62rem + 3.16vw), 2rem);
+  color: var(--Text);
+  margin-bottom: 1.25rem;
+}
+
+img {
+  width: 100%;
+  filter: hue-rotate(-30deg);
+  box-shadow: 0px 1px 23px 4px rgba(0, 0, 0, 0.1);
+}
